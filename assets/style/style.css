@@ -152,4 +152,15 @@ li a{
     height: 420px;
     background-color: white;
     border-radius: 7px;
+    margin-right: 10px;
+}
+
+#about-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: #9792e4;
+    height: 880px;
 }
