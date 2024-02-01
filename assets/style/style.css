@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 75px;
+    background-color: #017ff3;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+}
+
+.debug{
+    border: 1px solid black;
+}
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.centered{
+    justify-content: center;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.col{
+    flex-direction: column;
+}
+
+.logo{
+    width: 100px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.white-button{
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    padding: 5px;
+}
+
+header ul li{
+   float: left;
+   list-style: none;
+   padding: 10px;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.container{
+    width: 1140px;
+}
+
+#azure-demo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.card{
+    background-color:#b5ddff ;
+    width: 365px;
+    height: 345px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+}
+
+.wide-card{
+    width: 750px;
+}
+
+#strategic-planning{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9792e4;
+}
+
+.strategic-textbox{
+    width: 400px;
+    height: 220px;
+}
+
+.strategic-card{
+    width: 410px;
+    height: 555px;
+    background-color: white;
+    flex-direction: column;
+}
+
+#testimonials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
