@@ -62,6 +62,28 @@ header{
     margin: 0 auto;
 }
 
+i {
+    color: #0084fd;
+    font-size: xx-large;
+}
+
+#azure-demo .col{
+    background-color: #b5ddff;
+    color: #506070;
+}
+#azure-demo h3{
+    color: #0084fd
+}
+
+button{
+    align-items: center;
+    padding: ;
+}
+
+button .appstore-button{
+    color: white;
+}
+
 @media (min-width: 768px){
     .container{
       width: 720px; }  
