@@ -4,10 +4,13 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: "PT Sans", sans-serif;
+}
+
 header{
     height: 75px;
     background-color: #017ff3;
-    display: flex;
     justify-content: space-between;
     color: white;
     align-items: center;
@@ -19,148 +22,94 @@ header{
 
 .d-flex{
     display: flex;
-    flex-wrap: wrap;
+}
+
+.d-none{
+    display:none;
 }
 
 .centered{
     justify-content: center;
 }
 
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.nowrap{
+    flex-wrap: nowrap;
+}
+
 .row{
-    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .col{
-    flex-direction: column;
-}
-
-.logo{
-    width: 100px;
-    background-color: white;
-    border: 1px solid black;
-}
-
-.white-button{
-    background-color: white;
-    border: none;
-    border-radius: 10px;
-    color: black;
-    padding: 5px;
-}
-
-header ul li{
-   float: left;
-   list-style: none;
-   padding: 10px;
-}
-
-li a{
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
+   width: 100%;
 }
 
 .container{
-    width: 1140px;
+    width: 100%;
+    margin: 0 auto;
 }
 
-#azure-demo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
+@media (min-width: 768px){
+    .container{
+      width: 720px; }  
+  
+    #azure-demo .col{
+      width: calc(100% / 3); }
+  
+    #azure-demo .col:first-child{
+      width: calc(100% / 1.5);}
+  
+    #testimonials .card .row{
+      flex-wrap: nowrap; }
+  
+    #testimonials .card .col:first-child{
+      width: 20%;}
+  
+    #testimonials .card .col:last-child{
+      width: 80%; }
+  
+    #working-with-us .col{
+      width: 50%;  }
+  
+    #aboutus .col:first-child{
+      width: 60%; }
+  
+    #aboutus .col:last-child{
+      width: 40%; }
 }
 
-.card{
-    background-color:#b5ddff ;
-    width: 365px;
-    height: 345px;
-    margin-right: 10px;
-    margin-bottom: 25px;
-    border-radius: 15px;
-}
+@media (min-width: 1200px){
+    .d-xl-none{
+      display: none; }
+    
+    .d-xl-block{
+      display: block;}
 
-.wide-card{
-    width: 750px;
-}
-
-#strategic-planning{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #9792e4;
-}
-
-.strategic-textbox{
-    width: 400px;
-    height: 220px;
-}
-
-.strategic-card{
-    width: 410px;
-    height: 555px;
-    background-color: white;
-    flex-direction: column;
-}
-
-#testimonials{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-}
-
-#testimonials h1{
-    color: #9792e4;
-}
-
-.testimonial-card{
-    width: 1140px;
-    height: 280px;
-    background-color: #9792e4;
-    align-items: center;
-    border-radius: 5%;
-    margin-bottom: 30px;
-}
-
-.testimonial-card img{
-    background-color: white;
-    width: 200px;
-    height: 200px;
-    margin-left: 15px;
-    margin-right: 60px;
-}
-
-.testimonial-textbox{
-    max-width: 800px;
-    max-height: 200px;
-}
-
-#working-with-us{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #9792e4;
-    color: white;
-}
-
-.benefit-card{
-    width: 360px;
-    height: 420px;
-    background-color: white;
-    border-radius: 7px;
-    margin-right: 10px;
-}
-
-#about-us{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    color: #9792e4;
-    height: 880px;
-}
+    .container{
+      width: 1140px;}
+  
+    #strategic .col{
+      width: 50%;}
+  
+    #working-with-us .col{
+      width: calc(100% / 3);}
+  
+    #aboutus .col:first-child{
+      width: 70%;}
+  
+    #aboutus .col:last-child{
+      width: 30%;}
+  }
