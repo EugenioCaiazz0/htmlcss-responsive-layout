@@ -80,9 +80,86 @@ button{
     padding: ;
 }
 
-button .appstore-button{
+.appstore-button{
     color: white;
 }
+
+.arrow-button{
+  background-color:#9792e4;
+  border-radius: 50%;
+}
+
+.more-button{
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  background-color: #9792e4;
+  border-radius: 20%;
+  border: none;
+  font-size: xx-small;
+}
+
+#testimonials h1{
+  color: #9792e4;
+}
+
+#testimonials .card{
+  background-color: #9792e4;
+  border-radius: 5%;
+  margin-bottom: 30px;
+}
+
+#testimonials img{
+  max-width: 150px;
+  max-height: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit:cover;
+  margin-left: 15px;
+}
+
+#testimonials p{
+  padding-bottom: 15px;
+  padding-top: 15px
+}
+
+.card{
+  color: white;
+}
+
+#working-with-us{
+  background-color: #9792e4;
+}
+
+#working-with-us .col{
+  background-color: white;
+  border-radius: 15%;
+  padding: 15px;
+}
+
+#working-with-us h2{
+  color: white;
+  padding-bottom: 10px;
+}
+
+#working-with-us h1{
+  color: #9792e4;
+  padding-bottom: 10px;
+  font-size: xx-large;
+}
+
+#working-with-us h4{
+  color: #9792e4;
+  padding-bottom: 10px;
+}
+
+#working-with-us p{
+  color: black;
+  padding-bottom: 10px;
+  font-size: x-small;
+}
+
+
 
 @media (min-width: 768px){
     .container{
