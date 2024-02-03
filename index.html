@@ -1,3 +1,5 @@
+<!--RISCONTRATI PROBLEMI CON IL RESIZING DELLE IMMAGINI-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,29 +38,29 @@
 <!--DEMO-->
 <section id="azure-demo">
     
-    <div class="container">
+    <div class="container"> <!--non capisco perchè l'immagine non si resizi nonostante la dimensione della colonna sia definita come calc 100%/1.5-->
         <div class="col">
             <h3>Get a demo application</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam iusto quidem dignissimos commodi! Veritatis, recusandae quibusdam! Natus neque omnis odio?</p>
             <button type="button" class="appstore-button"><i class="fa-brands fa-apple"></i> App Store </button>
             <img src="assets/img/phone.png" alt="">
         </div>
-        <div class="col">
+        <div class="col d-flex flex-column justify-between align-items-center">
             <i class="fa-solid fa-file-code"></i>
             <h3>Clean code</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi totam corrupti fugiat pariatur sed numquam cum at quas nisi nihil!</p>
         </div>
-        <div class="col">
+        <div class="col d-flex flex-column justify-between align-items-center">
             <i class="fa-solid fa-compass-drafting"></i>
             <h3>Web Design</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat incidunt similique tempora esse fugiat numquam, at optio ipsam odit voluptas!</p>
         </div>
-        <div class="col">
+        <div class="col d-flex flex-column justify-between align-items-center">
             <i class="fa-solid fa-laptop-code"></i>
             <h3>Development</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod voluptas tempora consequatur amet voluptatem eaque debitis. Laborum accusamus aliquid voluptatum!</p>
         </div>
-        <div class="col">
+        <div class="col d-flex flex-column justify-between align-items-center">
             <i class="fa-solid fa-bullhorn"></i>
             <h3>Branding</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate vel aut atque modi aliquid praesentium! Iste dicta temporibus quia obcaecati.</p>
@@ -78,10 +80,10 @@
                 <h3>Strategic planning</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos ut optio temporibus vitae itaque dicta, nostrum pariatur molestiae laudantium aliquam debitis nam necessitatibus iste facere in ex deserunt mollitia totam.</p>
         </div>
-            <div class="col"> 
+            <div class="col d-flex flex-column justify-between align-items-center"> 
                 <img src="assets/img/planning2.png" alt="">
                 <h3>App Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, excepturi fugit libero quidem corporis eum quasi, quaerat maiores vitae architecto nihil tempore quos amet eveniet doloremque voluptatibus nostrum accusantium perferendis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum illo natus voluptatum asperiores quisquam cupiditate obcaecati itaque voluptatem amet in!</p>
                 <button type="button" class="arrow-button"><i class="fa-solid fa-arrow-down"></i></button>
         </div>
     </div>
@@ -97,6 +99,7 @@
         <p>We place huge value on strong relationships and have seen the benefit they bring to our business. Customer feedback is vital in helping us to get it right.</p>
     </div>
     
+    <div class="container">
     <div class="card">
         <div class="row">
             <div class="col"><img src="assets/img/testimonial1.jpg" alt=""></div>
@@ -105,9 +108,9 @@
                 <h4> Zio Tobia</h4>
             </div>
         </div>
-      </div>
+    </div>
 
-      <div class="card">
+    <div class="card">
         <div class="row">
           <div class="col"><img src="assets/img/testimonial2.jpg" alt=""></div>
           <div class="col">
@@ -115,9 +118,9 @@
             <h4> Zia Gesualda</h4>
           </div>
         </div>
-      </div>
+    </div>
 
-      <div class="card">
+    <div class="card">
         <div class="row">
           <div class="col"><img src="assets/img/testimonial3.jpg" alt=""></div>
           <div class="col">
@@ -125,7 +128,8 @@
             <h4> Zio Geremia</h4>
           </div>
         </div>
-      </div>
+    </div>
+    </div>
 </section>
 <!--TESTIMONIALS-->
 
@@ -182,15 +186,15 @@
 <section id="about-us">
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col d-flex flex-column justify-between">
                 <h1>About us</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis eaque quos obcaecati laudantium minus quod exercitationem recusandae eum, libero et, dolores quis doloremque porro amet maiores sunt facere pariatur ducimus.</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere molestiae magni officia nam dolore perferendis quam voluptates sunt sequi. Necessitatibus aut id officia sunt at dolor illo quos laudantium libero.</p>
             </div>
-            <div class="col">
+            <div class="col d-flex flex-column justify-between align-items-center">
                 <img src="assets/img/about.jpg" alt="">
                 <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque a, doloribus in adipisci ipsa esse?</h3>
-                <button type="button" class="linkedin-button"><i class="fa-brands fa-linkedin"></i>Find me on LinkedIn</button>
+                <button type="button" class="linkedin-button"><i class="fa-brands fa-linkedin"></i>  Find me on LinkedIn</button>
             </div>
         </div>
     </div>
@@ -201,7 +205,12 @@
 <section id="get-started">
     <div class="container">
         <div class="text-center">
-        
+            <h4>Get started</h4>
+            <h2>Simple, transparent pricing</h2>
+            <h1>It's Free!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quasi vitae consequuntur asperiores et illum ratione, aspernatur at soluta dolore?</p>
+            <button type="button" class="get-started-button"> Get started </button>
+            <p>Copyright 2021 Boolean - Class XX - <a href="">Privacy policy</a></p>
         </div>
     </div>
   </section>

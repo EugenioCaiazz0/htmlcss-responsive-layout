@@ -24,12 +24,20 @@ header{
     display: flex;
 }
 
+.flex-column{
+  flex-direction: column;
+}
+
 .d-none{
     display:none;
 }
 
 .centered{
     justify-content: center;
+}
+
+.align-items-center{
+  align-items: center;
 }
 
 .text-center{
@@ -76,17 +84,30 @@ i {
 }
 
 button{
-    align-items: center;
-    padding: ;
+  text-align: center;
 }
 
 .appstore-button{
     color: white;
+    padding: 0 15px 0;
+    background-color: #017ff3;
+    border-radius: 15px;
+    border: none;
+}
+
+.appstore-button i{
+  color: white;
 }
 
 .arrow-button{
   background-color:#9792e4;
   border-radius: 50%;
+  border: none;
+  padding: 10px;
+}
+
+.arrow-button i{
+  color: black;
 }
 
 .more-button{
@@ -99,13 +120,46 @@ button{
   font-size: xx-small;
 }
 
+.linkedin-button{
+  background-color: #9792e4;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  padding: 0 10px 0;
+  margin: auto;
+}
+
+.get-started-button{
+  background-color: white;
+  color: #9792e4;
+  border-radius: 15px;
+  border: none;
+  padding: 0 20px 0;
+  margin: auto;
+}
+
+button i{
+  font-size: small;
+}
+
+#strategic-planning{
+  background-color: #9792e4;
+  color: white;
+}
+
+#strategic-planning .col:last-child{
+  background-color: white;
+  border-radius: 20px;
+  color: black;
+}
+
 #testimonials h1{
   color: #9792e4;
 }
 
 #testimonials .card{
   background-color: #9792e4;
-  border-radius: 5%;
+  border-radius: 7.5%;
   margin-bottom: 30px;
 }
 
@@ -159,8 +213,32 @@ button{
   font-size: x-small;
 }
 
+#about-us h1{
+  color: #9792e4;
+  font-size: xx-large;
+}
 
+#about-us img{
+  max-width: 150px;
+  max-height: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit:cover;
+  margin-left: 15px;
+}
+#about-us h3{
+  color: #9792e4;
+  padding: 0 25px 0;
+}
 
+#get-started{
+  color: white;
+  background-color: #9792e4;
+}
+
+#get-started h1{
+  color: #f8be5e;
+}
 @media (min-width: 768px){
     .container{
       width: 720px; }  
@@ -169,7 +247,8 @@ button{
       width: calc(100% / 3); }
   
     #azure-demo .col:first-child{
-      width: calc(100% / 1.5);}
+      width: calc(100% / 1.5);
+      max-width: calc(100% / 1.5);}
   
     #testimonials .card .row{
       flex-wrap: nowrap; }
@@ -183,10 +262,10 @@ button{
     #working-with-us .col{
       width: 50%;  }
   
-    #aboutus .col:first-child{
+    #about-us .col:first-child{
       width: 60%; }
   
-    #aboutus .col:last-child{
+    #about-us .col:last-child{
       width: 40%; }
 }
 
@@ -206,9 +285,9 @@ button{
     #working-with-us .col{
       width: calc(100% / 3);}
   
-    #aboutus .col:first-child{
+    #about-us .col:first-child{
       width: 70%;}
   
-    #aboutus .col:last-child{
+    #about-us .col:last-child{
       width: 30%;}
   }
